@@ -1,11 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class loop {
+public class Loop {
     public static void main(String[] args){
         Scanner kbd = new Scanner (System.in);
 
         String decision;
 
+        String ageStr = "16";
+        int age = 0;
+        Integer old = Integer.parseInt(ageStr);
+
+        Double money = 0.0;
+
+        String[] values = new String[10];
+        values[0] = "";
+
+        Integer[] numbers = new Integer[10];
+
+        List<Money> valuesList = new ArrayList<Money>();
+        valuesList.add(new Money("Dollars", 1000000000.0));
         boolean yn = true;
         while(yn)
         {
